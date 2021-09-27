@@ -43,12 +43,12 @@ public:
     void serialize() {
         ofstream fout;
         if (count == 1) {
-            fout.open("output.txt", fstream::out);
+            fout.open("output.txt", fstream::out); // fstream::out открывает файл для записи в него 
             fout << Model << endl << Number << endl << LastNumber << endl << Cash;
             fout.close();
         }
         else {
-            fout.open("output.txt", ios_base::app);
+            fout.open("output.txt", ios_base::app);// ios_base::app открывает файл для записи в конец данного файла
             fout << endl;
             fout << Model << endl << Number << endl << LastNumber << endl << Cash;
             fout.close();
@@ -58,14 +58,14 @@ public:
 
     void serialize(const string& filename) {
         ofstream fout;
-        fout.open(filename + ".txt", fstream::out);
+        fout.open(filename + ".txt", fstream::out);// fstream::out открывает файл для записи в него 
         fout << Model << endl << Number << endl << LastNumber << endl << Cash;
         fout.close();
 
     }
     void deserialize() {
         fstream fin; //ifstream - file input
-        fin.open("output.txt", fstream::in);
+        fin.open("output.txt", fstream::in);// fstream::in открывает файл для чтения из него 
         int cnt = 0;
         std::string model;
         std::string number;
@@ -78,7 +78,7 @@ public:
             fin >> cash;
         }
         else {
-            while (cnt < count) {
+            while (cnt < count) { // цикл while и перменная cnt позволят читать свамые последние данные файла
                 fin >> model;
                 fin >> number;
                 fin >> lastNumber;
