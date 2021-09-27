@@ -1,6 +1,5 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <locale.h>  
+
 
 //Написать собственный класс, в соответствии с вариантом.Продемонстрировать в коде
 //инкапсуляцию данных, применение конструкторов без параметров и с параметрами
@@ -19,7 +18,6 @@
 //информацию о телефонах после проведенных звонков.
 
 #include <iostream>
-#include <cstdio>
 #include <string>
 #include <fstream>
 
