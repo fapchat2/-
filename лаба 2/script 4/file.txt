@@ -1,0 +1,9 @@
+# Вариант 4: найдите все строки вида «type x = value», где type – это тип
+(может принимать значение int, short или byte), х – любое слово, value –
+любое число.
+type x = value 
+
+    short iii = 22
+ int i = 33
+ byte b = 4;
+    shorttt iii = 22
