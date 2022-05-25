@@ -8,8 +8,8 @@
 
 import collections
 
-def take_second(elem):#берёт второй элемент из каждого кортежа, который лежит в списке lst
-    return elem[1]
+def take_second(turple):#берёт второй элемент из каждого кортежа, который лежит в списке lst
+    return turple[1]
 
 s = open('text.txt').read() # <class 'str'>
 
